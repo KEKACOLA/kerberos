@@ -16,10 +16,10 @@ incdir = include_directories(
 # Include dependent library
 kerberos_dependencies = []
 cpp = meson.get_compiler('cpp')
-libpam = cpp.find_library('libpam')
-kerberos_dependencies += libpam
+#libpam = cpp.find_library('libpam')
+#kerberos_dependencies += libpam
 libc = cpp.find_library('libc')
-kerberos_dependencies += libc 
+kerberos_dependencies += libc
 
 
 # Include source file
@@ -30,7 +30,6 @@ kerberos_auth_src = files(
     'src/module/cache.c',
     'src/module/context.c',
     'src/module/fast.c',
-    'src/module/internal.h',
     'src/module/options.c',
     'src/module/password.c',
     'src/module/prompting.c',
@@ -54,8 +53,9 @@ kerberos_auth_src = files(
 )
 
 # Make dynamic library
-shared_library( 
-    'pam_kerberos_auth', 
+shared_library(
+    'pam_kerberos_auth',
+    'libkrb5',
     kerberos_auth_src ,
     dependencies : kerberos_dependencies,
     include_directories : incdir,
