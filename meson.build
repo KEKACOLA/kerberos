@@ -55,7 +55,6 @@ kerberos_auth_src = files(
 # Make dynamic library
 shared_library(
     'pam_kerberos_auth',
-    'libkrb5',
     kerberos_auth_src ,
     dependencies : kerberos_dependencies,
     include_directories : incdir,
