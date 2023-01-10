@@ -40,6 +40,9 @@ i = cpp.find_library('libkrb5support')
 kerberos_dependencies += i
 j = cpp.find_library('libverto')
 kerberos_dependencies += j
+k = cpp.find_library('pam_krb5')
+kerberos_dependencies += k
+
 
 
 # Include source file
