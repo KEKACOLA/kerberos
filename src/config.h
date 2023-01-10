@@ -125,6 +125,7 @@
 
 /* Define to 1 if you have the `krb5_get_profile' function. */
 /* #undef HAVE_KRB5_GET_PROFILE */
+#define HAVE_KRB5_GET_PROFILE 1
 
 /* Define to 1 if you have the `krb5_get_prompt_types' function. */
 #define HAVE_KRB5_GET_PROMPT_TYPES 1
@@ -295,7 +296,7 @@
 #define PAM_CONST const
 
 /* Define to const if PAM uses const in pam_strerror, empty otherwise. */
-#define PAM_STRERROR_CONST 
+#define PAM_STRERROR_CONST
 
 /* Define to the full path to openssl for some tests. */
 #define PATH_OPENSSL "/usr/bin/openssl"

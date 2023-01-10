@@ -2,9 +2,9 @@
  * prof-int.h
  */
 
-#include "k5-platform.h"
-#include "k5-thread.h"
-#include "k5-plugin.h"
+#include "include/k5-platform.h"
+#include "include/k5-thread.h"
+#include "include/k5-plugin.h"
 
 #include <time.h>
 
