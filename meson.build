@@ -20,26 +20,6 @@ libpam = cpp.find_library('libpam')
 kerberos_dependencies += libpam
 libc = cpp.find_library('libc')
 kerberos_dependencies += libc
-a = cpp.find_library('libgssapi_krb5')
-kerberos_dependencies += a
-b = cpp.find_library('libgssrpc')
-kerberos_dependencies += b
-c = cpp.find_library('libk5crypto')
-kerberos_dependencies += c
-d = cpp.find_library('libkadm5clnt_mit')
-kerberos_dependencies += d
-e = cpp.find_library('libkadm5srv_mit')
-kerberos_dependencies += e
-f = cpp.find_library('libkdb5')
-kerberos_dependencies += f
-g = cpp.find_library('libkrad')
-kerberos_dependencies += g
-h = cpp.find_library('libkrb5')
-kerberos_dependencies += h
-i = cpp.find_library('libkrb5support')
-kerberos_dependencies += i
-j = cpp.find_library('libverto')
-kerberos_dependencies += j
 
 
 
