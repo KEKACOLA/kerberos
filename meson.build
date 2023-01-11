@@ -20,6 +20,8 @@ libpam = cpp.find_library('libpam')
 kerberos_dependencies += libpam
 libc = cpp.find_library('libc')
 kerberos_dependencies += libc
+libkrb5 = cpp.find_library('libkrb5')
+kerberos_dependencies += libkrb5
 
 
 
