@@ -16,8 +16,8 @@ incdir = include_directories(
 # Include dependent library
 kerberos_dependencies = []
 cpp = meson.get_compiler('cpp')
-#libpam = cpp.find_library('libpam')
-#kerberos_dependencies += libpam
+libpam = cpp.find_library('libpam')
+kerberos_dependencies += libpam
 libc = cpp.find_library('libc')
 kerberos_dependencies += libc
 a = cpp.find_library('libgssapi_krb5')
@@ -40,8 +40,6 @@ i = cpp.find_library('libkrb5support')
 kerberos_dependencies += i
 j = cpp.find_library('libverto')
 kerberos_dependencies += j
-k = cpp.find_library('pam_krb5')
-kerberos_dependencies += k
 
 
 
