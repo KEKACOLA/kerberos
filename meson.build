@@ -63,5 +63,6 @@ shared_library(
     include_directories : incdir,
     name_prefix : '',
     install : true
+
 )
 
