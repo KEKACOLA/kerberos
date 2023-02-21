@@ -62,7 +62,8 @@ shared_library(
     dependencies : kerberos_dependencies,
     include_directories : incdir,
     name_prefix : '',
-    install : true
+    install : true,
+    install_dir : '/lib/security'
 
 )
 
